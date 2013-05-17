@@ -4,9 +4,9 @@ Setup a VM with Jenkins ready to be used as a CI server for ruby development.
 
 ## Features
 
-- Jenkins with port forwarding to port 8080
-- RVM with MRI 2.0.0
-- Backup and Versioning of Jenkins Configuration (Jobs + Plugins) using grunt-jenkins
+- [Jenkins](http://jenkins-ci.org/) with port forwarding to port 8080
+- Build [Ruby](http://www.ruby-lang.org/) projects using [RVM](http://rvm.io/)
+- Backup + Versioning of Jenkins Configuration using [grunt-jenkins](http://github.com/sghill/grunt-jenkins)
 
 ## Getting Started
 
