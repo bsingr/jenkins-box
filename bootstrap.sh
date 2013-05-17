@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo ""
 echo "Checking dependencies for vagrant-jenkins!"
 echo ""
 
@@ -14,10 +15,23 @@ if [[ -z $VAGRANT_BIN ]]; then
 fi
 if [[ "$VAGRANT_BIN" =~ 'gem' ]];  then
   echo "vagrant gem found"
-	echo "=> FAIL"
+  echo "=> FAIL"
   echo "vagrant must be installed from package"
   echo "Get it here http://www.vagrantup.com"
-	exit 1
+  exit 1
 fi
 echo $(vagrant -v)
 echo '=> OK'
+
+echo ""
+echo "Installing ruby dependencies using bundler"
+gem install bundler --no-ri --no-rdoc
+bundle install
+
+echo ""
+echo "Installing cookbooks using berkshelf"
+bundle exec berks install
+
+echo ""
+echo "Installing vagrant plugins"
+vagrant plugin install vagrant-berkshelf
