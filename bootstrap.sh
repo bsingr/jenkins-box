@@ -35,3 +35,7 @@ bundle exec berks install
 echo ""
 echo "Installing vagrant plugins"
 vagrant plugin install vagrant-berkshelf
+
+echo ""
+echo "When there were no errors please try running 'vagrant up'"
+echo ""

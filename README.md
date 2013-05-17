@@ -14,6 +14,14 @@ Ensure that the dependencies are setup and then just execute:
 
     ./bootstrap.sh
 
+When everything went fine start yout VM:
+
+    vagrant up
+
+Then open your browser and visit jenkins:
+
+    open http://localhost:8080
+
 ## Dependencies
 
 - Vagrant
