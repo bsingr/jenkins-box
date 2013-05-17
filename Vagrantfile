@@ -72,11 +72,24 @@ Vagrant.configure("2") do |config|
   # config.berkshelf.except = []
 
   config.vm.provision :chef_solo do |chef|
-    chef.json = {}
+    # configure recipes
+    chef.json = {
+      'rvm' => {
+        'rubies'        => ['2.0.0'],
+        'default_ruby'  => '2.0.0',
+        'global_gems'   => [{ 'name'    => 'bundler' },
+                            { 'name'    => 'rake' }]
+      }
+    }
 
+    # run recipes
     chef.run_list = [
       'recipe[apt]',
-      'recipe[jenkins::server]'
+      'recipe[jenkins::server]',
+      'recipe[rvm]',
+      'recipe[rvm::vagrant]',
+      'recipe[rvm::system]',
+      'recipe[rvm::gem_package]'
     ]
   end
 end
