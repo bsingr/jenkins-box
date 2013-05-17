@@ -13,3 +13,5 @@ Gemfile.lock
 bin/*
 .bundle/*
 
+# NPM
+node_modules

@@ -22,6 +22,22 @@ Then open your browser and visit jenkins:
 
     open http://localhost:8080
 
+## Manage Jenkins configuration
+
+After each time you made changes to the global Jenkins configuration, plugins or jobs just do:
+
+    grunt jenkins-backup
+
+This will backup all stuff to the jenkins-configuration folder. You may put it under version control, yay!
+
+You can install jenkins configuration using:
+
+    grunt jenkins-install
+
+When you added / removed plugins you must restart Jenkins:
+
+    open http://localhost:8080/safeRestart
+
 ## Dependencies
 
 - Vagrant
