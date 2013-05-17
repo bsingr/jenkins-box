@@ -1,4 +1,4 @@
-# Vagrant Jenkins
+# Jenkins Box
 
 Setup a VM with Jenkins ready to be used as a CI server for ruby development.
 
