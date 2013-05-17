@@ -9,7 +9,7 @@
   },
   {
     "id": "ldap",
-    "version": "1.2"
+    "version": "1.4"
   },
   {
     "id": "pam-auth",
