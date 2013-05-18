@@ -2,6 +2,8 @@
 
 Setup a VM with Jenkins ready to be used as a CI server for ruby development.
 
+![Jenkins Box](./jenkins-box.png)
+
 ## Features
 
 - [Jenkins](http://jenkins-ci.org/) with port forwarding to port 8080
