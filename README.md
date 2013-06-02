@@ -42,7 +42,7 @@ When you added / removed plugins you must restart Jenkins:
 
 ## Dependencies
 
-- Vagrant
+- Vagrant 1.2+
 - Ruby + Bundler
 - Chef + Berkshelf
 - Node + NPM
