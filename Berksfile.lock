@@ -1,0 +1,52 @@
+{
+  "sources": {
+    "apt": {
+      "locked_version": "1.10.0"
+    },
+    "jenkins": {
+      "locked_version": "0.8.0",
+      "git": "git://github.com/opscode-cookbooks/jenkins.git",
+      "ref": "0ff2a4e20e5ca0646a112b3bc11c22af87a9f3ad"
+    },
+    "rvm": {
+      "locked_version": "0.9.1",
+      "git": "git://github.com/fnichol/chef-rvm.git",
+      "ref": "7038fb8c518d0d7785767de215b1ae463f237973"
+    },
+    "runit": {
+      "locked_version": "1.1.0",
+      "git": "git://github.com/noazark/runit.git",
+      "ref": "31a6cf67fa376e89638381ae012bc7c5bc87b1bb"
+    },
+    "java": {
+      "locked_version": "1.12.0"
+    },
+    "windows": {
+      "locked_version": "1.10.0"
+    },
+    "chef_handler": {
+      "locked_version": "1.1.4"
+    },
+    "apache2": {
+      "locked_version": "1.6.6"
+    },
+    "nginx": {
+      "locked_version": "1.7.0"
+    },
+    "build-essential": {
+      "locked_version": "1.4.0"
+    },
+    "yum": {
+      "locked_version": "2.3.0"
+    },
+    "ohai": {
+      "locked_version": "1.1.10"
+    },
+    "iptables": {
+      "locked_version": "0.12.0"
+    },
+    "chef_gem": {
+      "locked_version": "0.1.0"
+    }
+  }
+}
