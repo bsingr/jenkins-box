@@ -37,7 +37,7 @@ echo "Installing vagrant plugins"
 vagrant plugin install vagrant-berkshelf
 
 echo ""
-echo "Installing grunt using bundler"
+echo "Installing grunt using npm"
 sudo npm install grunt-cli -g
 
 echo ""
