@@ -1,6 +1,6 @@
 site :opscode
 
-cookbook 'apt'
+cookbook 'apt', '~> 1.10'
 cookbook 'jenkins', git: 'git://github.com/opscode-cookbooks/jenkins.git'
 cookbook 'rvm', git: 'git://github.com/fnichol/chef-rvm.git'
 
