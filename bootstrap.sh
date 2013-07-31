@@ -38,7 +38,7 @@ vagrant plugin install vagrant-berkshelf
 
 echo ""
 echo "Installing grunt using bundler"
-npm install grunt-cli -g
+sudo npm install grunt-cli -g
 
 echo ""
 echo "When there were no errors please try running 'vagrant up'"
